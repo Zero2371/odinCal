@@ -23,6 +23,7 @@
     justify-content: end;
     margin-top: 60px;
 }
+
 .clearDel{
     display: flex;
     width: 300px;
@@ -31,4 +32,39 @@
 .clearDel button{
     padding: 10px 50px;
 
+}
+.rowZero{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.rowZero button{
+    padding: 15px 30px;
+}
+
+.rowOne{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.rowOne button{
+    padding: 15px 30px;
+}
+
+.rowTwo{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.rowTwo button{
+    padding: 15px 30px;
+}
+
+.rowThree{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+.rowThree button{
+    padding: 15px 30px;
 }
