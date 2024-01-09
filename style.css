@@ -3,7 +3,7 @@
     padding: 0;
 }
 .calculator{
-    width: 300px;
+    width: 333px;
     height: 600px;
     margin: 50px auto 0;
     background-color: black;
@@ -15,11 +15,20 @@
 }
 .answer{
     background-color: white;
-    width: 250px;
+    width: 300px;
     height: 120px;
 }
 .numbers{
     display: flex;
     justify-content: end;
-    margin-top: 80px;
+    margin-top: 60px;
+}
+.clearDel{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.clearDel button{
+    padding: 10px 50px;
+
 }
