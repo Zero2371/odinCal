@@ -12,16 +12,19 @@
     justify-content: space-around;
     align-items: center;
     font-size: 40px;
+    border-radius: 20px;
 }
 .answer{
     background-color: white;
     width: 300px;
     height: 120px;
+    background-color: rgb(63, 63, 63);
 }
 .numbers{
     display: flex;
     justify-content: end;
     margin-top: 60px;
+    color: white;
 }
 
 .clearDel{
@@ -29,10 +32,14 @@
     width: 300px;
     justify-content: space-between;
 }
+.clearDel .clear{
+    background-color: rgb(166, 0, 0);
+}
 .clearDel button{
     padding: 10px 50px;
 
 }
+
 .rowZero{
     display: flex;
     justify-content: space-between;
@@ -40,6 +47,7 @@
 }
 .rowZero button{
     padding: 15px 30px;
+    font-size: 28px;
 }
 
 .rowOne{
@@ -49,6 +57,7 @@
 }
 .rowOne button{
     padding: 15px 30px;
+    font-size: 28px;
 }
 
 .rowTwo{
@@ -58,6 +67,7 @@
 }
 .rowTwo button{
     padding: 15px 30px;
+    font-size: 28px;
 }
 
 .rowThree{
@@ -67,4 +77,12 @@
 }
 .rowThree button{
     padding: 15px 30px;
+    font-size: 28px;
+}
+.button{
+    padding: 15px 30px;
+    font-size: 28px;
+}
+.lastBtn{
+    background-color: orange;
 }
