@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+body{
+    background-color: rgb(182, 182, 182);
+}
 .calculator{
     width: 333px;
     height: 600px;
@@ -13,6 +16,7 @@
     align-items: center;
     font-size: 40px;
     border-radius: 20px;
+    box-shadow: 10px 10px 5px rgb(78, 78, 78);
 }
 .answer{
     background-color: white;
@@ -23,64 +27,73 @@
 .numbers{
     display: flex;
     justify-content: end;
-    margin-top: 60px;
+    margin: 60px 13px 0 0;
     color: white;
 }
 
-.clearDel{
+.clearSection{
     display: flex;
     width: 300px;
-    justify-content: space-between;
 }
-.clearDel .clear{
+.clearSection .clear{
     background-color: rgb(166, 0, 0);
+    width: 100%;
+    padding: 13px 0;
 }
-.clearDel button{
-    padding: 10px 50px;
-
+.allBtns{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
-
 .rowZero{
     display: flex;
     justify-content: space-between;
     width: 300px;
+    gap: 5px;
 }
 .rowZero button{
-    padding: 15px 30px;
+    width: 75px;
+    height: 75px;
     font-size: 28px;
 }
 
 .rowOne{
     display: flex;
     justify-content: space-between;
+    gap: 5px;
     width: 300px;
 }
 .rowOne button{
-    padding: 15px 30px;
     font-size: 28px;
+    width: 75px;
+    height: 75px;
 }
 
 .rowTwo{
     display: flex;
     justify-content: space-between;
     width: 300px;
+    gap: 5px;
 }
 .rowTwo button{
-    padding: 15px 30px;
     font-size: 28px;
+    width: 75px;
+    height: 75px;
 }
 
 .rowThree{
     display: flex;
     justify-content: space-between;
     width: 300px;
+    gap: 5px;
 }
 .rowThree button{
-    padding: 15px 30px;
     font-size: 28px;
+    width: 75px;
+    height: 75px;
 }
 .button{
-    padding: 15px 30px;
+    background-color: rgb(182, 182, 182);
     font-size: 28px;
 }
 .lastBtn{
