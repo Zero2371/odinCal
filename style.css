@@ -4,8 +4,8 @@
 }
 .calculator{
     width: 333px;
-    height: 650px;
-    margin: 100px auto 0;
+    height: 600px;
+    margin: 50px auto 0;
     background-color: black;
     display: flex;
     flex-direction: column;
@@ -15,70 +15,56 @@
 }
 .answer{
     background-color: white;
-     width: 300px;
-    height: 100px;
-    
+    width: 300px;
+    height: 120px;
 }
 .numbers{
     display: flex;
     justify-content: end;
-    margin-top: 50px;
-
-
+    margin-top: 60px;
 }
 
 .clearDel{
     display: flex;
-     width: 300px;
+    width: 300px;
     justify-content: space-between;
-    margin-top: 12px;
 }
 .clearDel button{
     padding: 10px 50px;
 
-
 }
-.buttons{
+.rowZero{
     display: flex;
+    justify-content: space-between;
     width: 300px;
-    height: 450px;
 }
-.columnZero{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100px;
-}
-.columnZero button{
-    padding: 10px;
+.rowZero button{
+    padding: 15px 30px;
 }
 
-.columnOne{
+.rowOne{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 100px;
+    justify-content: space-between;
+    width: 300px;
 }
-.columnOne button{
-    padding: 10px
+.rowOne button{
+    padding: 15px 30px;
 }
 
-.columnTwo{
+.rowTwo{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-     width: 100px;
+    justify-content: space-between;
+    width: 300px;
 }
-.columnTwo button{
-    padding: 10px
+.rowTwo button{
+    padding: 15px 30px;
 }
 
-.columnThree{
+.rowThree{
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-     width: 100px;
+    justify-content: space-between;
+    width: 300px;
 }
-.columnThree button{
-    padding: 10px;
+.rowThree button{
+    padding: 15px 30px;
 }
