@@ -99,3 +99,17 @@ body{
 .lastBtn{
     background-color: orange;
 }
+footer{
+    display: flex;
+    justify-content: center;
+width: 300px;
+height: 130px;
+margin: 30px auto 0;
+font-size: 34px;
+text-align: center;
+align-items: end;
+}
+footer img{
+    width: 45px;
+    height: 45px;
+}

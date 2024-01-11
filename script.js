@@ -6,7 +6,7 @@ allBtns.forEach(button => {
         const type = e.target.dataset.type
 
         numbers.innerText += type
-        
+
         if(type === '=') {
             if (numbers.innerText.includes('/')) {
                 const splitItems = numbers.innerText.split('/')
@@ -46,5 +46,7 @@ if(operator === '*') {
 }
 if(operator === '+') {
     numbers.innerText = num1+num2
+
 }
 }
+console.log(numbers);
