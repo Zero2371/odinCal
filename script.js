@@ -4,6 +4,8 @@ const allBtns = document.querySelectorAll('button');
 allBtns.forEach(button => {
     button.addEventListener('click', (e) => {
         const type = e.target.dataset.type
+
+        numbers.innerText += type
         
         if(type === '=') {
             if (numbers.innerText.includes('/')) {
@@ -24,8 +26,6 @@ allBtns.forEach(button => {
             }
         }
 
-        numbers.innerText += type
-
         if (type === 'clear') {
             numbers.innerText = ''
         }
@@ -33,5 +33,18 @@ allBtns.forEach(button => {
 })
 
 const operate = (operator, type1, type2) => {
-
+    const num1 = Number(type1);
+    const num2 = Number(type2);
+if(operator === '/') {
+    numbers.innerText = num1/num2
+}
+if(operator === '-') {
+    numbers.innerText = num1-num2
+}
+if(operator === '*') {
+    numbers.innerText = num1*num2
+}
+if(operator === '+') {
+    numbers.innerText = num1+num2
+}
 }
