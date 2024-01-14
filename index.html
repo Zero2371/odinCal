@@ -11,7 +11,7 @@
     <main class="main">
         <div class="calculator">
             <div class="answer">
-                <div class="numbers"></div>
+                <div id="result" class="numbers"></div>
             </div>
             <div class="clearDelSection">
                 <button class="clear" data-type="clear">clear</button>
@@ -19,28 +19,28 @@
             </div>
             <div class="allBtns">
             <div class="rowZero">
-                <button class="btnSeven button" data-type='7'>7</button>
-                <button class="btnEight button" data-type='8'>8</button>
-                <button class="btnNine button"data-type='9'>9</button>
-                <button class="btnDivide lastBtn" data-type="/">/</button>
+                <button class="btnSeven button" value="7" data-type='7' onclick="appendToResult('7')">7</button>
+                <button class="btnEight button" value="8" data-type='8' onclick="appendToResult('8')">8</button>
+                <button class="btnNine button" value="9" data-type='9' onclick="appendToResult('9')">9</button>
+                <button class="btnDivide lastBtn" value="/" data-type="/" onclick="appendToResult('/')">/</button>
             </div>
             <div class="rowOne">
-                <button class="btnFour button" data-type="4">4</button>
-                <button class="btnFive button" data-type="5">5</button>
-                <button class="btnSix button" data-type="6">6</button>
-                <button class="btnMulitply lastBtn" data-type="*">*</button>
+                <button class="btnFour button" value="4" data-type="4" onclick="appendToResult('4')">4</button>
+                <button class="btnFive button" value="5" data-type="5" onclick="appendToResult('5')">5</button>
+                <button class="btnSix button" value="6" data-type="6" onclick="appendToResult('6')">6</button>
+                <button class="btnMulitply lastBtn" value="*" data-type="*" onclick="appendToResult('*')">*</button>
             </div>
             <div class="rowTwo">
-                <button class="btnOne button" data-type="1">1</button>
-                <button class="btnTwo button" data-type="2">2</button>
-                <button class="btnThree button" data-type="3">3</button>
-                <button class="btnSubtract lastBtn" data-type="-">-</button>
+                <button class="btnOne button" value="1" data-type="1" onclick="appendToResult('1')">1</button>
+                <button class="btnTwo button" value="2" data-type="2" onclick="appendToResult('2')">2</button>
+                <button class="btnThree button" value="3" data-type="3" onclick="appendToResult('3')">3</button>
+                <button class="btnSubtract lastBtn" value="-" data-type="-" onclick="appendToResult('-')">-</button>
             </div>
             <div class="rowThree">
-                <button class="btnPeriod button" data-type=".">.</button>
-                <button class="btnZero button" data-type="0">0</button>
-                <button class="btnEquals button" data-type="=">=</button>
-                <button class="btnAdd lastBtn" data-type="+">+</button>
+                <button class="btnPeriod button" value="." data-type="." onclick="appendToResult('.')">.</button>
+                <button class="btnZero button" value="0" data-type="0" onclick="appendToResult('0')">0</button>
+                <button class="btnEquals button" value="=" data-type="=" onclick="appendToResult('=')">=</button>
+                <button class="btnAdd lastBtn" value="+" data-type="+" onclick="appendToResult('+')">+</button>
             </div>
             </div>
         </div>
