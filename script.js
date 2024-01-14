@@ -72,7 +72,7 @@ calcKeys.addEventListener('click', (e) => {
                 displayResult.textContent = 'Error';
             }
         }
-
+        
         calculator.dataset.previousKeyType = type;
 })
 
