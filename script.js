@@ -6,11 +6,11 @@ let isEqualsPressed = false;
 let equation = 0;
 let checkForDecmial = '';
 
-calcKeys.addEventListener('click', (e) => {
-    if (!e.target.closest('button')) 
+calcKeys.addEventListener('click', (event) => {
+    if (!event.target.closest('button')) 
     return;
 
-    const key = e.target;
+    const key = event.target;
     const keyValue = key.textContent;
     let inputDisplay = userInput.textContent;
     const { type } = key.dataset;
@@ -37,7 +37,7 @@ calcKeys.addEventListener('click', (e) => {
     if(type === 'operator' && previousKeyType !== 'operator' && !isEqualsPressed && !inputDisplay.includes('Infinty')) {
         checkForDecmial = '';
         userInput.textContent = inputDisplay + '' + keyValue + '';
-        equation = equation + ' ' + key.Value + ' ';
+        equation = equation + ' ' + key.value + ' ';
 
     }
         if(type === 'decimal' && (previousKeyType === 'number' || inputDisplay === '0') && !isEqualsPressed && !inputDisplay.includes('Infinity')) {
@@ -88,6 +88,7 @@ calcKeys.addEventListener('click', (e) => {
        //NOT IN USE 
        // if(operator === 'remainder' || operator === '%') return firstNum % secondNum;
     }
+    
     function handleEquation(equation) {
         equation = equation.split(' ');
         const operators = ['/', '*', '-', '+', '%'];
@@ -109,8 +110,10 @@ calcKeys.addEventListener('click', (e) => {
             }
         }
         return result;
+        
     }
-    document.addEventListener('keydown', (e) => {
+    
+    document.addEventListener('keydown', (event) => {
 
         let getOperators = {
             '/':'divide',
@@ -119,19 +122,19 @@ calcKeys.addEventListener('click', (e) => {
             '-' :'subtract',
             '%' : 'remainder'
         }
-        if(!isNaN(e.key) && e.key !== ' ') {
-            document.getElementbyId(`digit-${e.key}`).click();
+        if(!isNaN(event.key) && event.key !== ' ') {
+            document.getElementById(`digit-${event.key}`).click();
         }
-        if(['/', '*', '+', '-', '%'].includes(e.key)) {
-            document.getElementById(getOperators[e.key]).click();
+        if(['/', '*', '+', '-', '%'].includes(event.key)) {
+            document.getElementById(getOperators[event.key]).click();
         }
-        if(e.key === 'backspace' || e.key === 'c' || e.key === 'C') {
+        if(event.key === 'Backspace' || event.key === 'c' || event.key === 'C') {
             document.getElementById('clear').click();
         }
-        if(e.key === '=' || e.key === 'Enter') {
+        if(event.key === '=' || event.key === 'Enter') {
             document.getElementById('equals').click();
         }
-        if(e.key === '.') {
+        if(event.key === '.') {
             document.getElementById('decmial').click();
         }
     });
@@ -169,8 +172,8 @@ const deleteNumber = document.querySelector('#deleteNum');
 
 
 allBtns.forEach(button => {
-    button.addEventListener('click', (e) => {
-        const type = e.target.dataset.type
+    button.addEventListener('click', (event) => {
+        const type = event.target.dataset.type
 
 
         if(type === '=') {
