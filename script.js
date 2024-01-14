@@ -38,7 +38,7 @@ calcKeys.addEventListener('click', (event) => {
 
     if(type === 'operator' && previousKeyType !== 'operator' && !isEqualsPressed && !inputDisplay.includes('Infinty')) {
         checkForDecmial = '';
-        userInput.textContent = inputDisplay + '' + keyValue + ' ';
+        userInput.textContent = inputDisplay + ' ' + keyValue + ' ';
         equation = equation + ' ' + key.value + ' ';
 
     }
