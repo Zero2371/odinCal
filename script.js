@@ -34,17 +34,17 @@ allBtns.forEach(button => {
                 operate('*', splitItems[0], splitItems[1])
             }
         }
-
         if (type === 'clear') {
             numbers.innerText = ''
         }
-        numbers.innerText += type
+        
+        numbers.innerText += type;
     })
 })
 
 const operate = (operator, type1, type2) => {
-    num1 = Number(type1);
-    num2 = Number(type2);
+    const num1 = Number(type1);
+    const num2 = Number(type2);
 if(operator === '/') {
     numbers.innerText = num1/num2
 }
@@ -56,7 +56,6 @@ if(operator === '*') {
 }
 if(operator === '+') {
     numbers.innerText = num1+num2
-
 
 }
 
