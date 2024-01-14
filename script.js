@@ -99,7 +99,7 @@ calcKeys.addEventListener('click', (e) => {
 
         for(var i = 0; i < operators.length; i++) {
             while(equation.includes(operators[i])) {
-                operatorIndex = equation.findIndex(item => === operators[i]);
+                operatorIndex = equation.findIndex(item => item === operators[i]);
                 firstNum = equation[operatorIndex -1];
                 operator = equation[operatorIndex];
                 secondNum = equation[operatorIndex +1];
@@ -110,7 +110,7 @@ calcKeys.addEventListener('click', (e) => {
         }
         return result;
     }
-    document.addEventListener('keydown' (e) => {
+    document.addEventListener('keydown', (e) => {
 
         let getOperators = {
             '/':'divide',
@@ -134,7 +134,7 @@ calcKeys.addEventListener('click', (e) => {
         if(e.key === '.') {
             document.getElementById('decmial').click();
         }
-    })
+    });
 
 
 

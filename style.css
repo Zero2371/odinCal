@@ -24,10 +24,16 @@ body{
     height: 120px;
     background-color: rgb(63, 63, 63);
 }
-.numbers{
+.userInput{
     display: flex;
     justify-content: end;
-    margin: 60px 13px 0 0;
+    color: white;
+    margin: 10px 13px 0 0;
+}
+.result{
+    display: flex;
+    justify-content: end;
+    margin: 6px 13px 0 0;
     color: white;
 }
 
