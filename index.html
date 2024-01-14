@@ -12,36 +12,36 @@
         <div class="calculator">
             <div class="answer">
                 <div id="userInput" class="userInput">0</div>
-                <div id="result" class="result"></div>
+                <div id="result" class="result">&nbsp;</div>
             </div>
             <div class="clearDelSection">
-                <button class="clear" data-type="clear">clear</button>
+                <button id='clear' class="clear" data-type="clear">clear</button>
                 <button id="deleteNum" class="delete" data-type="delete">delete</button>
             </div>
             <div class="allBtns">
             <div class="rowZero">
-                <button class="btnSeven button" value="7" data-type='7' onclick="appendToResult('7')">7</button>
-                <button class="btnEight button" value="8" data-type='8' onclick="appendToResult('8')">8</button>
-                <button class="btnNine button" value="9" data-type='9' onclick="appendToResult('9')">9</button>
-                <button class="btnDivide lastBtn" value="/" data-type="/" onclick="appendToResult('/')">/</button>
+                <button class="button" value="7" data-type='number' id="digit-7" onclick="appendToResult('7')">7</button>
+                <button class="button" value="8" data-type='number' id="digit-8" onclick="appendToResult('8')">8</button>
+                <button class="button" value="9" data-type='number' id="digit-9" onclick="appendToResult('9')">9</button>
+                <button class="button lastBtn" value="/" data-type='operator' onclick="appendToResult('/')">/</button>
             </div>
             <div class="rowOne">
-                <button class="btnFour button" value="4" data-type="4" onclick="appendToResult('4')">4</button>
-                <button class="btnFive button" value="5" data-type="5" onclick="appendToResult('5')">5</button>
-                <button class="btnSix button" value="6" data-type="6" onclick="appendToResult('6')">6</button>
-                <button class="btnMulitply lastBtn" value="*" data-type="*" onclick="appendToResult('*')">*</button>
+                <button class="button" value="4" data-type='number' id="digit-4" onclick="appendToResult('4')">4</button>
+                <button class="button" value="5" data-type='number' id="digit-5" onclick="appendToResult('5')">5</button>
+                <button class="button" value="6" data-type='number' id="digit-6" onclick="appendToResult('6')">6</button>
+                <button class="button lastBtn" value="*" data-type='operator' onclick="appendToResult('*')">*</button>
             </div>
             <div class="rowTwo">
-                <button class="btnOne button" value="1" data-type="1" onclick="appendToResult('1')">1</button>
-                <button class="btnTwo button" value="2" data-type="2" onclick="appendToResult('2')">2</button>
-                <button class="btnThree button" value="3" data-type="3" onclick="appendToResult('3')">3</button>
-                <button class="btnSubtract lastBtn" value="-" data-type="-" onclick="appendToResult('-')">-</button>
+                <button class="button" value="1" data-type='number' id="digit-1" onclick="appendToResult('1')">1</button>
+                <button class="button" value="2" data-type='number' id="digit-2" onclick="appendToResult('2')">2</button>
+                <button class="button" value="3"data-type='number' id="digit-3" onclick="appendToResult('3')">3</button>
+                <button class="button lastBtn" value="-" data-type='operator' onclick="appendToResult('-')">-</button>
             </div>
             <div class="rowThree">
-                <button class="btnPeriod button" value="." data-type="." onclick="appendToResult('.')">.</button>
-                <button class="btnZero button" value="0" data-type="0" onclick="appendToResult('0')">0</button>
-                <button class="btnEquals button" value="=" data-type="=" onclick="appendToResult('=')">=</button>
-                <button class="btnAdd lastBtn" value="+" data-type="+" onclick="appendToResult('+')">+</button>
+                <button class="button" value="." data-type='decmial' id="decmial" onclick="appendToResult('.')">.</button>
+                <button class="button" value="0" data-type='number' id="digit-0" onclick="appendToResult('0')">0</button>
+                <button class="button" value="=" data-type='equal' id="equals" onclick="appendToResult('=')">=</button>
+                <button class="button lastBtn" value="+" data-type='operator' onclick="appendToResult('+')">+</button>
             </div>
             </div>
         </div>

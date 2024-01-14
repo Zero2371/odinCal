@@ -1,4 +1,4 @@
-const calcKeys = document.querySelector('.buttons');
+const calcKeys = document.querySelector('.allBtns');
 const userInput = document.querySelector('#userInput');
 const calculator = document.querySelector('.calculator');
 const displayResult = document.querySelector('#result');
@@ -63,7 +63,7 @@ calcKeys.addEventListener('click', (e) => {
         }
         if(type === 'equal') {
             isEqualsPressed = true;
-            const finalResult = handleEqaution(equation);
+            const finalResult = handleEquation(equation);
             
             if(finalResult || finalResult === 0) {
                 displayResult.textContent = (!Number.isInteger(finalResult)) ? finalResult.toFixed(2) :
@@ -88,7 +88,7 @@ calcKeys.addEventListener('click', (e) => {
        //NOT IN USE 
        // if(operator === 'remainder' || operator === '%') return firstNum % secondNum;
     }
-    function handleEquation(eqaution) {
+    function handleEquation(equation) {
         equation = equation.split(' ');
         const operators = ['/', '*', '-', '+', '%'];
         let firstNum;
