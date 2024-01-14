@@ -26,6 +26,8 @@ calcKeys.addEventListener('click', (event) => {
                 var replaceNumber = checkForDecmial;
                 checkForDecmial = Number(checkForDecmial).toExponential(2);
                 userInput.textContent = inputDisplay.replace(replaceNumber, checkForDecmial);
+               // userInput.textContent = inputDisplay.replace(new RegExp(replaceNumber, 'g'), checkForDecmial);
+
             } else {
                 userInput.textContent = userInput.textContent.includes('N') ? 'NaN' : userInput.textContent.includes('I') ? 'Infinty' : inputDisplay + keyValue;
                 equation = equation + key.value;
@@ -36,7 +38,7 @@ calcKeys.addEventListener('click', (event) => {
 
     if(type === 'operator' && previousKeyType !== 'operator' && !isEqualsPressed && !inputDisplay.includes('Infinty')) {
         checkForDecmial = '';
-        userInput.textContent = inputDisplay + '' + keyValue + '';
+        userInput.textContent = inputDisplay + '' + keyValue + ' ';
         equation = equation + ' ' + key.value + ' ';
 
     }
